@@ -35,7 +35,7 @@ function SearchBar() {
   };
   return (
     <>
-      <nav id="main" className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand">
             <b>ShoppingCart</b>
@@ -79,7 +79,6 @@ function SearchBar() {
                   Cart items: {arr !== "" ? arr.length : "0"}
                 </a>
               </li>
-              <li className="nav-item"></li>
             </ul>
             <form onSubmit={handleSubmit} className="d-flex" role="search">
               <input

@@ -13,7 +13,7 @@
 #one h5{
   font-size: 11px;
 } 
-#main{
+.container-fluid{
   background-color: rgb(243, 106, 48);
 }
 #icon{
@@ -27,7 +27,9 @@
     font-size: 20px;
     color: rgb(234, 134, 42);
  }
-
+ li{
+  width: 90px;
+ }
 
 @media(max-width:760px){
   #one{
@@ -40,14 +42,19 @@
 
   padding: 4px 0px 0px 3px;
  }
+
  #one p {
    color: brown;
  }
  .gap-3{
    margin-top: 60px;
  }
- 
+ li{
+  width: 90px;
+  height: 40px;
+ }
  #one h5{
+
    font-size: 6px;
  } 
  .container-fluid{
