@@ -24,7 +24,7 @@ function AllResult() {
     );
   } else if (status == STATUS.IDLE) {
     return (
-      <div className="container d-flex flex-wrap gap-3 justify-content-between ">
+      <div className="container d-flex flex-wrap gap-3 ">
         {arrrayofdata.length > 0 ? (
           arrrayofdata.map((val, ind) => <FinalResult key={ind} val={val} />)
         ) : show == true ? (

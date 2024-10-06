@@ -1,6 +1,7 @@
  #one{
    margin-bottom: 10px;
-   width: 200px
+   width: 200px;
+   margin-left: 8px;
 }
 
 #one p {
@@ -35,7 +36,7 @@
   #one{
     margin-bottom: 10px;
     width: 100px;
-
+    margin-left: 4.5px;
  }
  .card-body{
 

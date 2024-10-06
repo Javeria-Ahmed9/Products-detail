@@ -9,7 +9,7 @@ function Cart() {
   };
   return (
     <>
-      <div className="container d-flex flex-wrap gap-3 justify-content-between ">
+      <div className="container d-flex flex-wrap gap-3 ">
         {addedData.length > 0 ? (
           addedData.map((val, ind) => (
             <div key={ind} id="one" className="card bg-primary-subtle ">
