@@ -1,0 +1,62 @@
+ #one{
+   margin-bottom: 10px;
+   width: 200px
+}
+
+#one p {
+  color: brown;
+}
+.gap-3{
+  margin-top: 60px;
+}
+
+#one h5{
+  font-size: 11px;
+} 
+#main{
+  background-color: rgb(243, 106, 48);
+}
+#icon{
+  margin-top: 200px;
+ }
+#three{
+  margin-top: 30px;
+ }
+ #three p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(234, 134, 42);
+ }
+
+
+@media(max-width:760px){
+  #one{
+    margin-bottom: 10px;
+    width: 100px;
+
+ }
+ .card-body{
+
+
+  padding: 4px 0px 0px 3px;
+ }
+ #one p {
+   color: brown;
+ }
+ .gap-3{
+   margin-top: 60px;
+ }
+ 
+ #one h5{
+   font-size: 6px;
+ } 
+ .container-fluid{
+   background-color: rgb(243, 106, 48);
+ }
+ #one a {
+  width: 70px;
+  height: 25px;
+  font-size: 8px;
+ }
+}
+
