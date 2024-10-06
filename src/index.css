@@ -1,15 +1,17 @@
  #one{
    margin-bottom: 10px;
    width: 200px;
-   margin-left: 8px;
 }
-
 #one p {
   color: brown;
 }
-.gap-3{
+.flex-wrap{
   margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  
 }
+
 
 #one h5{
   font-size: 11px;
@@ -36,7 +38,7 @@
   #one{
     margin-bottom: 10px;
     width: 100px;
-    margin-left: 4.5px;
+    margin-left: 0px;
  }
  .card-body{
 
