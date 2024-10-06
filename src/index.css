@@ -50,7 +50,8 @@
    margin-top: 60px;
  }
  li{
-  width: 90px;
+  width: 110px;
+  background-color: aqua;
   height: 40px;
  }
  #one h5{
