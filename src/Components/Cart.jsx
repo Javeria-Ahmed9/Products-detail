@@ -12,7 +12,7 @@ function Cart() {
       <div className="container d-flex flex-wrap gap-3 ">
         {addedData.length > 0 ? (
           addedData.map((val, ind) => (
-            <div key={ind} id="one" className="card bg-primary-subtle ">
+            <div key={ind} id="one" className="card  ">
               <img src={val.thumbnail} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">
