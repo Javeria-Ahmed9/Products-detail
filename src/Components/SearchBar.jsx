@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchdata, Unshow } from "../Store/productdataSlice";
 import { NavLink, Outlet } from "react-router-dom";
@@ -7,6 +7,16 @@ function SearchBar() {
   let dispatch = useDispatch();
 
   const [val, setVal] = useState("");
+  const [dat, setData] = useState([]);
+
+  useEffect(() => {
+    let fetchdata = async () => {
+      await fetch(`https://dummyjson.com/products/search?q=${val}`).then(
+        (res) => res.json().then((response) => setData(response.products))
+      );
+    };
+    fetchdata();
+  }, [val]);
 
   let handleInput = (event) => {
     setVal(event.target.value);
@@ -18,6 +28,12 @@ function SearchBar() {
       dispatch(Unshow());
     }
   };
+  let handleOpt = (opt) => {
+    setVal(opt);
+    dispatch(fetchdata(opt));
+    dispatch(Unshow());
+  };
+
   let handleClick = () => {
     if (val.trim() !== "") {
       dispatch(fetchdata(val));
@@ -33,6 +49,7 @@ function SearchBar() {
       textDecoration: isActive ? "" : "",
     };
   };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -100,6 +117,23 @@ function SearchBar() {
           </div>
         </div>
       </nav>
+      <div id="searchopt">
+        <div className="dropdown-content">
+          {val &&
+            dat
+              .filter((vl) => vl.title.toLowerCase().startsWith(val))
+              .map((v, ind) => (
+                <div
+                  className="border"
+                  id="clickopt"
+                  onClick={() => handleOpt(v.title)}
+                  key={ind}
+                >
+                  {v.title}
+                </div>
+              ))}
+        </div>
+      </div>
       <Outlet />
     </>
   );

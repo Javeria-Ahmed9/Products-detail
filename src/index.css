@@ -11,8 +11,17 @@
   justify-content: space-evenly;
   
 }
+#searchopt{
+  float: right;
+  width: 201px;
+  margin-right: 94px;
+  padding-left: 5px;
 
-
+}
+#clickopt:hover{
+  background-color: rgb(227, 182, 91);
+  cursor: pointer;
+}
 #one h5{
   font-size: 11px;
 } 
@@ -68,5 +77,12 @@
   height: 25px;
   font-size: 8px;
  }
+ #searchopt{
+  float: right;
+  width: 230px;
+  margin-right: 94px;
+  padding-left: 5px;
+
+}
 }
 
