@@ -19,7 +19,8 @@ function SearchBar() {
   }, [val]);
 
   let handleInput = (event) => {
-    setVal(event.target.value);
+    let valueIs = event.target.value;
+    setVal(valueIs.toLowerCase());
   };
   let handleSubmit = (event) => {
     event.preventDefault();
